@@ -67,7 +67,7 @@ double test(){
     ListNode* head = NULL;
     bool flag = false;
     string testcase = "";
-    int acc = 0;
+    double acc = 0;
     int sum = 0;
     ListNode* curRes = NULL;
 	while(!testcases.eof())
@@ -94,7 +94,7 @@ double test(){
 				pos = stoi(testcase);
 				for(int i = 0 ; i < pos; i++){
 					if(head == NULL){
-						cout<<"testcase: "<<testText<<" is a wrong answer."<<endl;
+						cout<<"Testcase: "<<testText<<" is a Wrong Answer."<<endl;
 						break;
 					}
 					head = head->next;
@@ -105,11 +105,11 @@ double test(){
 				acc++;
 				cout<<"Accepted!"<<endl;
 			} else{
-				cout<<"testcase: "<<testText<<" is a wrong answer."<<endl;
+				cout<<"Testcase: "<<testText<<" is a Wrong Answer."<<endl;
 				if(pos == -1)
-					cout<<"accurate answer is position NULL but your answer is the node of value "<< curRes->val<<endl;
+					cout<<"Accurate answer is position NULL but your answer is the node of value "<< curRes->val<<endl;
 				else
-					cout<<"accurate answer is position "<<pos<<" but your answer is the node of value "<< curRes->val<<endl;
+					cout<<"Accurate answer is position "<<pos<<" but your answer is the node of value "<< curRes->val<<endl;
 			}
 			//cout<<endl;
 			curRes = NULL;
@@ -119,8 +119,9 @@ double test(){
     testcases.close();
     delete curRes;
     delete head;
+    acc = 1.0*acc/sum;
     cout<<"The accuracy of the algorithm in this testcase set of "<< sum << " tests is "<<(acc*100)<<"% ."<<endl;
-    return 1.0*acc/sum;
+    return acc;
 }
 
 int main(){
