@@ -1,10 +1,11 @@
-#include<stdio.h>
-#include<iostream>
-#include <fstream>
-#include<string>
-#include<ctype.h>
-#include<stdlib.h>
 using namespace::std;
+#include "test_env.h" 
+#include "test_env.cpp" 
+
+#define ANSWER_TYPE ListNode*
+#define PARA_TYPE ListNode*
+#define SOLUTION detectCycle
+#define FILENAME "testcases142.txt"
 
 //Difinition of LinkedList node.
 struct ListNode {
@@ -14,9 +15,9 @@ struct ListNode {
 };
 
 //Solution of problem # 142. 
-class Solution {
+class Solution{
 public:
-    ListNode *detectCycle(ListNode *head) {
+    static ListNode *detectCycle(ListNode *head) {
         if(head == NULL || head->next == NULL || head->next->next == NULL) return NULL;
         ListNode* fast = head->next->next;
         ListNode* slow = head->next;
@@ -35,97 +36,59 @@ public:
     }
 };
 
-//input and output of my own testcases in file 'testcases142.txt'
-ListNode* str2list(string& testcase){
+template<typename ANS, typename PARA>
+PARA tester<ANS, PARA>::test_resolver(string& testname){
 	ListNode* head = new ListNode(0);
 	ListNode* cur = head;
 	int i = 0, j = 0;
-	while(j < testcase.length() && testcase[j-1] != ']'){
-		if(!isdigit(testcase[j])){
-			string sub = testcase.substr(i, j-i);
+	//find '['
+	while(testname[i] != '[') i++;
+	i++;
+	j = i;
+	while(j < testname.length()){
+		while(testname[j] == ' ') j++;
+		if(!isdigit(testname[j])){
+			while(i < j && !isdigit(testname[i])) i++;
+			if(i == j) break;
+			int sub = stoi(testname.substr(i, j-i));
+			cur->next = new ListNode(sub);
+			cur = cur->next;
 			i = j+1;
-			if(sub != ""){
-				cur->next = new ListNode(stoi(sub));
-				cur = cur->next;
-			}
+			if(testname[j] == ']') break;
 		}
 		j++;
 	}
-	
-	int pos = stoi(testcase.substr(j+1));
+	int pos = stoi(testname.substr(j+1));
 	if(head->next == NULL || pos == -1) return head->next;
 	ListNode* end = cur; 
 	cur = head->next;
 	for(int i = 0; i < pos; i++) cur = cur->next;
 	end->next = cur;
+	cur = head;
 	return head->next;
 }
-double test(){
-	Solution* ans = new Solution();
-	fstream testcases;
-    testcases.open("testcases142.txt",ios::in);
-    ListNode* head = NULL;
-    bool flag = false;
-    string testcase = "";
-    double acc = 0;
-    int sum = 0;
-    ListNode* curRes = NULL;
-	while(!testcases.eof())
-    {
-        if(!flag){
-        	getline(testcases, testcase);
-        	if(testcase == "") continue;
-        	//cout<<testcase<<endl;
-        	head = str2list(testcase);
-        	ListNode* res = ans->detectCycle(head);
-        	//if(res == NULL) cout<<"there is no circle in this linked list."<<endl;
-        	//else cout<<"value of circle begining node is: "<<res->val<<endl;
-        	curRes = res;
-        	sum++;
-        	flag = !flag;
-		} else {
-			int pos = -1;
-			string testText = testcase;
-			getline(testcases, testcase);
-			if(testcase == "") continue;
-			if(testcase == "NULL")
-				head = NULL;
-			else{
-				pos = stoi(testcase);
-				for(int i = 0 ; i < pos; i++){
-					if(head == NULL){
-						cout<<"Testcase: "<<testText<<" is a Wrong Answer."<<endl;
-						break;
-					}
-					head = head->next;
-				}
-			}
-			
-			if(head == curRes){
-				acc++;
-				cout<<"Accepted!"<<endl;
-			} else{
-				cout<<"Testcase: "<<testText<<" is a Wrong Answer."<<endl;
-				if(pos == -1)
-					cout<<"Accurate answer is position NULL but your answer is the node of value "<< curRes->val<<endl;
-				else
-					cout<<"Accurate answer is position "<<pos<<" but your answer is the node of value "<< curRes->val<<endl;
-			}
-			//cout<<endl;
-			curRes = NULL;
-			flag = !flag;
-		}
-    }
-    testcases.close();
-    delete curRes;
-    delete head;
-    acc = 1.0*acc/sum;
-    cout<<"The accuracy of the algorithm in this testcase set of "<< sum << " tests is "<<(acc*100)<<"% ."<<endl;
-    return acc;
+
+template<typename ANS, typename PARA>
+ANS tester<ANS, PARA>::ans_resolver(string& ansname, PARA para){
+	if(!isdigit(ansname[0])) return NULL;
+	ListNode* head = para;
+	int pos = -1;
+	pos = stoi(ansname);
+	for(int i = 0 ; i < pos; i++){
+		if(head == NULL)
+			break;
+		head = head->next;
+	}
+	return head;
+}
+
+template<typename ANS, typename PARA>
+ANS solution_temp<ANS, PARA>::solve(PARA parameter){
+	return Solution::SOLUTION(parameter);
 }
 
 int main(){
-	double acc = test();
-	
-	return 0;
-} 
+	tester<ANSWER_TYPE, PARA_TYPE> *t = new tester<ANSWER_TYPE, PARA_TYPE>();
+	string filename = FILENAME;
+	t->test(filename);
+}
