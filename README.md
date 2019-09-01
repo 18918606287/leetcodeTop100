@@ -8,6 +8,8 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 
 ## Completed List
 
++ 001 Two Sum
++ 002 Add Two Numbers
 + 021 Merge Two Sorted Lists
 + 053 Maximum Subarray 
 + 142 Linked List Circle
