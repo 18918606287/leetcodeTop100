@@ -14,4 +14,4 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 146 LRUcache
 + 206 Reverse Linked List
 + 287 Find the Duplicate Number
-+ 300 300. Longest Increasing Subsequence
++ 300 Longest Increasing Subsequence
