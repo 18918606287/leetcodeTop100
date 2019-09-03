@@ -12,9 +12,11 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 002 Add Two Numbers
 + 021 Merge Two Sorted Lists
 + 053 Maximum Subarray 
++ 101 Symmetric Tree
 + 142 Linked List Circle
 + 146 LRUcache
 + 206 Reverse Linked List
 + 287 Find the Duplicate Number
 + 295 Find Median from Data Stream
 + 300 Longest Increasing Subsequence
++ 322 Coin Change
