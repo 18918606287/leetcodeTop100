@@ -22,6 +22,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 283 Move Zeros
 + 287 Find the Duplicate Number
 + 295 Find Median from Data Stream
++ 297 Serialize and Deserialize Binary Tree
 + 300 Longest Increasing Subsequence
 + 322 Coin Change
 + 338 Counting Bits
