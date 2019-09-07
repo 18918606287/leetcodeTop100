@@ -10,6 +10,8 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 
 + 001 Two Sum
 + 002 Add Two Numbers
++ 003 Longest Substring Without Repeating Characters
++ 004 Median of Two Sorted Arrays
 + 008 String to Integer (atoi)
 + 021 Merge Two Sorted Lists
 + 053 Maximum Subarray
