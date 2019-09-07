@@ -1,12 +1,16 @@
 using namespace::std;
 #include "test_env.h" 
 #include "test_env.cpp" 
-#include<vector>
 
 #define ANSWER_TYPE int
 #define PARA_TYPE vector<int>
 #define SOLUTION findDuplicate
 #define FILENAME "testcases.txt"
+
+#define INPUT_LISTNODE 0
+#define INPUT_VECTOR_INT 1
+
+#define RET_LISTNODE 0
 
 class Solution {
 public:
@@ -20,28 +24,18 @@ public:
     }
 };
 
+#if INPUT_VECTOR_INT == 1
 template<typename ANS, typename PARA>
 PARA tester<ANS, PARA>::test_resolver(string& testname){
-	vector<int> container;
-	int i = 0, j = 0;
-	//find '['
-	while(testname[i] != '[') i++;
-	i++;
-	j = i;
-	while(j < testname.length()){
-		while(testname[j] == ' ') j++;
-		if(!isdigit(testname[j])){
-			while(i < j && !isdigit(testname[i])) i++;
-			if(i == j) break;
-			int sub = stoi(testname.substr(i, j-i));
-			container.push_back(sub);
-			i = j+1;
-			if(testname[j] == ']') break;
-		}
-		j++;
-	}
-	return container;
+	resolvers* res = new resolvers();
+	return res->vector_int_resolver(testname);
 }
+#else
+template<typename ANS, typename PARA>
+PARA tester<ANS, PARA>::test_resolver(string& testname){
+	//your code here
+}
+#endif
 
 template<typename ANS, typename PARA>
 ANS tester<ANS, PARA>::ans_resolver(string& ansname, PARA para){
