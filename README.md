@@ -6,7 +6,7 @@ Here I will upload my own **CPP** code solution of LeetCode Top100 problems with
 
 If you are interested in my idea, here is my blog [Erebos's blog](https://erebos.top) and I will write down some of them on it. And feel free to email me or issue your question.
 
-## Completed List (32/100)
+## Completed List (33/100)
 
 + 001 Two Sum
 + 002 Add Two Numbers
@@ -36,6 +36,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 338 Counting Bits
 + 347 Top K Frequent Elements
 + 394 Decode String
++ 416 Partition Equal Subset Sum
 + 560 Subarray Sum Equals K
 + 617 Merge Two Binary Trees
 + 647 Palindromic Substrings
