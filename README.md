@@ -14,6 +14,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 004 Median of Two Sorted Arrays
 + 008 String to Integer (atoi)
 + 019 Remove Nth Node From End of List
++ 020 Valid Parentheses
 + 021 Merge Two Sorted Lists
 + 053 Maximum Subarray
 + 070 Climb Stairs
@@ -39,5 +40,6 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 416 Partition Equal Subset Sum
 + 560 Subarray Sum Equals K
 + 617 Merge Two Binary Trees
++ 621 Task Scheduler
 + 647 Palindromic Substrings
 + 739 Daily Temperatures
