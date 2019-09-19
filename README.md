@@ -37,6 +37,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 338 Counting Bits
 + 347 Top K Frequent Elements
 + 394 Decode String
++ 406 Queue Reconstruction by Height
 + 416 Partition Equal Subset Sum
 + 560 Subarray Sum Equals K
 + 617 Merge Two Binary Trees
