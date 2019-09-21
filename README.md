@@ -39,6 +39,8 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 394 Decode String
 + 406 Queue Reconstruction by Height
 + 416 Partition Equal Subset Sum
++ 438 Find All Anagrams in a String
++ 543 Diameter of Binary Tree
 + 560 Subarray Sum Equals K
 + 581 Shortest Unsorted Continuous Subarray
 + 617 Merge Two Binary Trees
