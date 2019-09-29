@@ -6,7 +6,7 @@ Here I will upload my own **CPP** code solution of LeetCode Top100 problems with
 
 If you are interested in my idea, here is my blog [Erebos's blog](https://erebos.top) and I will write down some of them on it. And feel free to email me or issue your question.
 
-## Completed List (45/100)
+## Completed List (46/100)
 
 + 001 Two Sum
 + 002 Add Two Numbers
@@ -18,7 +18,9 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 021 Merge Two Sorted Lists
 + 053 Maximum Subarray
 + 062 Unique Paths
++ 064 Minimum Path Sum
 + 070 Climb Stairs
++ 075 Sort Colors
 + 094 Binary Tree Inorder Traversal
 + 101 Symmetric Tree
 + 104 Maximum Depth of Binary Tree
