@@ -37,6 +37,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 297 Serialize and Deserialize Binary Tree
 + 300 Longest Increasing Subsequence
 + 301 Remove Invalid Parentheses
++ 312 Burst Balloons
 + 322 Coin Change
 + 337 House Robber III
 + 338 Counting Bits
