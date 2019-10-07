@@ -22,6 +22,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 070 Climb Stairs
 + 075 Sort Colors
 + 094 Binary Tree Inorder Traversal
++ 098 Validate Binary Search Tree
 + 101 Symmetric Tree
 + 104 Maximum Depth of Binary Tree
 + 136 Single Number
