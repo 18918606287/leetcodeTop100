@@ -32,7 +32,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 206 Reverse Linked List
 + 226 Invert Binary Tree
 + 234 Palindrome Linked List
-+ Meeting Rooms II
++ 253 Meeting Rooms II
 + 283 Move Zeros
 + 287 Find the Duplicate Number
 + 295 Find Median from Data Stream
