@@ -6,7 +6,7 @@ Here I will upload my own **CPP** code solution of LeetCode Top100 problems with
 
 If you are interested in my idea, here is my blog [Erebos's blog](https://erebos.top) and I will write down some of them on it. And feel free to email me or issue your question.
 
-## Completed List (46/100)
+## Completed List (53/100)
 
 + 001 Two Sum
 + 002 Add Two Numbers
@@ -16,6 +16,8 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 019 Remove Nth Node From End of List
 + 020 Valid Parentheses
 + 021 Merge Two Sorted Lists
++ 023 Merge k Sorted Lists
++ 042 Trapping Rain Water
 + 053 Maximum Subarray
 + 062 Unique Paths
 + 064 Minimum Path Sum
@@ -32,6 +34,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 206 Reverse Linked List
 + 226 Invert Binary Tree
 + 234 Palindrome Linked List
++ 238 Product of Array Except Self
 + 253 Meeting Rooms II
 + 283 Move Zeros
 + 287 Find the Duplicate Number
