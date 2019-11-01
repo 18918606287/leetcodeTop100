@@ -6,13 +6,15 @@ Here I will upload my own **CPP** code solution of LeetCode Top100 problems with
 
 If you are interested in my idea, here is my blog [Erebos's blog](https://erebos.top) and I will write down some of them on it. And feel free to email me or issue your question.
 
-## Completed List (53/100)
+## Completed List (55/100)
 
 + 001 Two Sum
 + 002 Add Two Numbers
 + 003 Longest Substring Without Repeating Characters
 + 004 Median of Two Sorted Arrays
++ 005 Longest Palindromic Substring
 + 008 String to Integer (atoi)
++ 011 Container With Most Water
 + 019 Remove Nth Node From End of List
 + 020 Valid Parentheses
 + 021 Merge Two Sorted Lists
