@@ -31,6 +31,7 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 + 101 Symmetric Tree
 + 104 Maximum Depth of Binary Tree
 + 136 Single Number
++ 138 Copy List with Random Pointer
 + 141 Linked List Circle I
 + 142 Linked List Circle II
 + 146 LRUcache
