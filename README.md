@@ -9,3 +9,4 @@ If you are interested in my idea, here is my blog [Erebos's blog](https://erebos
 ## Completed List (1/100)
 
 + 001 Two Sum
+  
